@@ -1,0 +1,16 @@
+{
+    printWidth: 100,
+    singleQuote: true,
+    tabWidth: 4,
+    trailingComma: "none",
+    proseWrap: "always",
+    overrides: [
+        {
+            files: "packages/app/src/modules/**/*.html",
+            options: {
+                parser: "lwc"
+            }
+        }
+    ]
+}
+
