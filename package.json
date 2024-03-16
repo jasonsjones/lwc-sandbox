@@ -1,12 +1,15 @@
 {
-  "name": "lwc-oss",
-  "version": "1.0.0",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "license": "MIT",
-  "devDependencies": {
+    "name": "lwc-oss",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "dev": "yarn workspace @orion/app dev"
+    },
+    "license": "MIT",
+    "devDependencies": {
     "prettier": "3.2.5"
-  }
+    }
 }

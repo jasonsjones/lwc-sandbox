@@ -5,6 +5,8 @@
     "type": "module",
     "license": "MIT",
     "scripts": {
+        "build": "rollup --config rollup.config.js && cp src/index.html dist",
+        "clean": "rm -rf dist",
         "format": "prettier *.json *.js src/**/*.{js,html} --write",
         "dev": "node src/server.js"
     },
