@@ -5,9 +5,21 @@ import fastifyStatic from '@fastify/static';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const env = process.env.NODE_ENV;
+console.log(`environment: ${env}`);
+
+const envToLogger = {
+    dev: {
+        transport: {
+            target: 'pino-pretty'
+        }
+    },
+    prod: true,
+    test: false
+};
 
 const fastify = Fastify({
-    logger: true
+    logger: envToLogger[env] ?? true
 });
 
 fastify.register(fastifyStatic, {

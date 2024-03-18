@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "scripts": {
-        "dev": "yarn workspace @orion/app dev",
+        "dev": "NODE_ENV=dev yarn workspace @orion/app dev",
         "lint": "yarn workspace @orion/app lint"
     },
     "license": "MIT",
