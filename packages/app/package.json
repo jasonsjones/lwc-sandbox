@@ -8,9 +8,13 @@
         "build": "rollup --config rollup.config.js && cp src/index.html dist",
         "clean": "rm -rf dist",
         "format": "prettier *.json *.js src/**/*.{js,html} --write",
+        "lint": "eslint '**/*.js' --max-warnings 0",
         "dev": "node src/server.js"
     },
     "devDependencies": {
+        "@babel/core": "7.24.0",
+        "@babel/eslint-parser": "7.23.10",
+        "@lwc/eslint-plugin-lwc": "1.7.2",
         "@lwc/rollup-plugin": "6.3.2",
         "@rollup/plugin-replace": "5.0.5",
         "lwc": "6.3.2",
