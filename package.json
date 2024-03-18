@@ -6,10 +6,14 @@
         "packages/*"
     ],
     "scripts": {
-        "dev": "yarn workspace @orion/app dev"
+        "dev": "yarn workspace @orion/app dev",
+        "lint": "yarn workspace @orion/app lint"
     },
     "license": "MIT",
     "devDependencies": {
-    "prettier": "3.2.5"
+        "eslint": "8.57.0",
+        "eslint-config-prettier": "9.1.0",
+        "eslint-plugin-prettier": "5.1.3",
+        "prettier": "3.2.5"
     }
 }
