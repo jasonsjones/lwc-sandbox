@@ -6,6 +6,8 @@
         "packages/*"
     ],
     "scripts": {
+        "build": "yarn workspace @orion/app build",
+        "clean": "yarn workspace @orion/app clean",
         "dev": "NODE_ENV=dev yarn workspace @orion/app dev",
         "lint": "yarn workspace @orion/app lint"
     },
